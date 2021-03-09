@@ -1,0 +1,139 @@
+[
+  {
+    "result": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWZhNThiNGE0MzMwOWM0YWJiNGVkMzU1NDQ4NmZkMWJiOTUyY2MyNmFmMDlkZTZiYmRmNDYxZDMwNDkzMGU4MyJ9fX0=",
+    "name": "Apfel",
+    "ingredients": {
+      "HONEYCOMB": 1,
+      "APPLE": 1,
+      "SUGAR": 1
+    }
+  },
+  {
+    "result": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzNiYTlhOTQ4ZWYxMjVhYWZkYjZiYzkxYmU2YzgwNGQ3MWFlZTE2NGJhMjE5N2IwYjIyNWE4NDdmZmYwNDhjMCJ9fX0=",
+    "name": "Christmas Tree",
+    "ingredients": {
+      "OAK_LOG": 2,
+      "OAK_LEAVES": 2,
+      "GLASS": 1,
+      "GLOWSTONE": 1
+    }
+  },
+  {
+    "result": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGZiMzJiNmViYWE3MzczZWY3NDQ3Mzg1ZTBiOTYxNmI2N2VmOTgyZjY5MzQxMzcxNDI5MWZmMzVlYjAyM2MifX19",
+    "name": "Christmas Tree Candy",
+    "ingredients": {
+      "OAK_LOG": 2,
+      "OAK_LEAVES": 2,
+      "GLOWSTONE_DUST": 1
+    }
+  },
+  {
+    "result": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2JiZThmZDFhYTM5ZjE1MDc2ZTg4NGRmZTZkZGI5YTNmMzc2MWRiMzFlMmIxZjk5NDBiNWRmZDM0ZDFjNGQifX19",
+    "name": "Snowglobe",
+    "ingredients": {
+      "SNOWBALL": 1,
+      "GLASS": 1
+    }
+  },
+  {
+    "result": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODg0ZTkyNDg3YzY3NDk5OTViNzk3MzdiOGE5ZWI0YzQzOTU0Nzk3YTZkZDZjZDliNGVmY2UxN2NmNDc1ODQ2In19fQ==",
+    "name": "Christmas Ball Ornament (red)",
+    "ingredients": {
+      "GLASS": 1,
+      "RED_DYE": 1
+    }
+  },
+  {
+    "result": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWU0ODYxNWRmNmI3ZGRmM2FkNDk1MDQxODc2ZDkxNjliZGM5ODNhM2ZhNjlhMmFjYTEwN2U4ZjI1MWY3Njg3In19fQ==",
+    "name": "Christmas Ball Ornament (green)",
+    "ingredients": {
+      "GLASS": 1,
+      "GREEN_DYE": 1
+    }
+  },
+  {
+    "result": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjdlMTFkYjhmMzkyNzI3YTFjNDU5ZWI1OTFkZDhhMGFhMzg2MWMyNzQ4N2UxMzg0YmIyMmY5MTU3M2JlNyJ9fX0=",
+    "name": "Christmas Ball Ornament (blue)",
+    "ingredients": {
+      "GLASS": 1,
+      "BLUE_DYE": 1
+    }
+  },
+  {
+    "result": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjExYWIzYTExMzJjOWQxZWY4MzVlYTgxZDk3MmVkOWI1Y2Q4ZGRmZjBhMDdjNTVhNzQ5YmNmY2Y4ZGY1In19fQ==",
+    "name": "Christmas Ball Ornament (gold)",
+    "ingredients": {
+      "GLASS": 1,
+      "GOLD_INGOT": 1
+    }
+  },
+  {
+    "result": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODg2NjJiYTA3MDhlOGQ2MGQ1NjM2NWVjMmJjMDBmZjE3OTJmMTY2MzRmYzg0NWE4NDNhODRkZTA4MWVhNGYifX19",
+    "name": "Christmas Ball Ornament (purple)",
+    "ingredients": {
+      "GLASS": 1,
+      "PURPLE_DYE": 1
+    }
+  },
+  {
+    "result": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDhjNTNiY2U4YWU1OGRjNjkyNDkzNDgxOTA5YjcwZTExYWI3ZTk0MjJkOWQ4NzYzNTEyM2QwNzZjNzEzM2UifX19",
+    "name": "Christmas Ball Ornament (black)",
+    "ingredients": {
+      "GLASS": 1,
+      "BLACK_DYE": 1
+    }
+  },
+  {
+    "result": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTI2ZTM0NjI4N2EyMWRiZmNhNWI1OGMxNDJkOGQ1NzEyYmRjODRmNWI3NWQ0MzE0ZWQyYTgzYjIyMmVmZmEifX19",
+    "name": "Christmas Ball Ornament (cyan)",
+    "ingredients": {
+      "GLASS": 1,
+      "CYAN_DYE": 1
+    }
+  },
+  {
+    "result": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmVhMTc3ZjFiNzRjYTU3YTFjY2U5MzhlOGQ5OTRiYzFmNjM3ZTVmNjljODJlZmYyOTYxMmExM2JhOGIyZGQ3In19fQ==",
+    "name": "Christmas Ball Ornament (orange)",
+    "ingredients": {
+      "GLASS": 1,
+      "ORANGE_DYE": 1
+    }
+  },
+  {
+    "result": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjZjNDA2MjQyZjViZjk3ODZkODgzY2I2YTI1ODFjZTI5OWM2NmY0ZWQ4ODk3YzhiODU3NjllNGQyYTM4MzEifX19",
+    "name": "Christmas Light (orange)",
+    "ingredients": {
+      "GLOWSTONE": 1,
+      "ORANGE_DYE": 1
+    }
+  },
+  {
+    "result": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTFmZjZhNTVlOTcxOTMxZWIwNjI2NTY1ZGFkNzc3MTQxOWZhZTk4ODdhYTZkNTJiZjE5OTU3MTc4NjBjIn19fQ==",
+    "name": "Christmas Light (yellow)",
+    "ingredients": {
+      "GLOWSTONE": 1,
+      "YELLOW_DYE": 1
+    }
+  },
+  {
+    "result": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzlmZjg4ODY3YmI0MTk2OWJiMTg3OTM1ODZkMmJjZmFiZmM5ZjljM2NmNTFiYjlmZmM2ODk0ZjRlNTZhNjgifX19",
+    "name": "Christmas Light (red)",
+    "ingredients": {
+      "GLOWSTONE": "1",
+      "RED_DYE": 1
+    }
+  },
+  {
+    "result": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzQ5ZGI3NDg2MDUwNWIwMjBjM2E3NjdjMjAwYWM2MjU0YTYzMTliNTkxYWJjYTJmYjc3Mjk1ODZjMTNmMWZjMCJ9fX0=",
+    "name": "Christmas Pudding",
+    "tags": [
+      "Christmas",
+      "Pastries and Sweets"
+    ],
+    "ingredients": {
+      "SUGAR": 1,
+      "EGG": 1,
+      "MILK_BUCKET": 1
+    }
+  }
+]
