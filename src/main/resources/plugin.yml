@@ -1,0 +1,9 @@
+name: Headcraft
+version: ${project.version}
+main: de.ximanton.headcraft.Main
+api-version: 1.16
+authors: [xImAnton_]
+description: Add custom Recipes for custom heads
+commands:
+  heads:
+    description: Commands for the Head Plugin
