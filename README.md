@@ -48,3 +48,5 @@ It is written in python using PyQt5. You can find the source in `/crawler/`.
 As you can see, you only have to paste in the minecraft-heads.com url and the crawler requests the site and extracts the B64-String and the head name. Now you only have to add the ingredients and you have your output json.
 
 Optionally you can open a recipe.json file using the "Select File" Button and append the recipe using the "Add to File" Button.
+
+Note: the `"tags"` key that you can see is not required. Maybe I'll add a feature to the plugin later that allows you to filter heads by tags.
