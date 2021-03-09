@@ -37,3 +37,14 @@ A recipe is notated as json:
 
 An array of such objects is stored in the ./plugins/HeadCraft/recipes.json file that is created on first server start.
 
+## minecraft-heads.com
+
+I also made a webcrawler for `minecraft-heads.com` that automatically creates a recipe.json for you.
+
+It is written in python using PyQt5. You can find the source in `/crawler/`.
+
+![Crawler Screenshot](/src/img/crawler.png) 
+
+As you can see, you only have to paste in the minecraft-heads.com url and the crawler requests the site and extracts the B64-String and the head name. Now you only have to add the ingredients and you have your output json.
+
+Optionally you can open a recipe.json file using the "Select File" Button and append the recipe using the "Add to File" Button.
