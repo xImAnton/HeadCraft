@@ -1,12 +1,16 @@
 from PyQt5 import QtWidgets
+from PyQt5.QtCore import Qt
 from PyQt5 import uic
 from crawl import Head
 import json
 
 
+with open("materials.txt", "r") as f:
+    MATERIALS = [line.strip() for line in f.readlines()]
+
+
 def find_first_empty_row(table, col):
     r = 0
-    f = False
     while r < table.rowCount():
         if table.item(r, col) is None:
             return r
@@ -37,6 +41,10 @@ class MainWindow(QtWidgets.QMainWindow, uic.loadUiType("main.ui")[0]):
         self.selected_mat = ""
         self.clear()
         self.out_file = ""
+
+        material_completion = QtWidgets.QCompleter(MATERIALS, self)
+        material_completion.setCaseSensitivity(Qt.CaseSensitivity.CaseInsensitive)
+        self.mat_name.setCompleter(material_completion)
 
     def select_file(self):
         dialog = QtWidgets.QFileDialog()
