@@ -1,8 +1,8 @@
-from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtCore import Qt
+from PyQt5 import QtWidgets
 from PyQt5 import uic
 from crawl import Head
 import json
+
 
 def find_first_empty_row(table, col):
     r = 0
@@ -12,6 +12,7 @@ def find_first_empty_row(table, col):
             return r
         r += 1
     return 0
+
 
 class MainWindow(QtWidgets.QMainWindow, uic.loadUiType("main.ui")[0]):
     def __init__(self, parent=None):
@@ -36,28 +37,28 @@ class MainWindow(QtWidgets.QMainWindow, uic.loadUiType("main.ui")[0]):
         self.selected_mat = ""
         self.clear()
         self.out_file = ""
-    
+
     def select_file(self):
         dialog = QtWidgets.QFileDialog()
         if dialog.exec_():
             self.out_file = dialog.selectedFiles()[0]
             self.btn_file.setText("File Selected")
             self.btn_add_file.setEnabled(True)
-    
+
     def append_file(self):
         with open(self.out_file, "r") as f:
             file_json = json.loads(f.read())
         file_json.append(self.head.to_dict())
         with open(self.out_file, "w") as f:
             f.write(json.dumps(file_json, indent=2))
-        
+
     def clear(self):
         self.head_name.setText("")
         self.head_string.setText("")
         self.head = Head()
         self.json_text.setText(self.head.to_json())
         self.renew_table()
-        
+
     def set_ingre_sel(self, b, i=None):
         self.ingre_selected = b
         if not b:
@@ -65,7 +66,7 @@ class MainWindow(QtWidgets.QMainWindow, uic.loadUiType("main.ui")[0]):
         else:
             self.btn_ingre.setText("Remove")
             self.selected_mat = self.ingre_table.item(i.row(), 0).text()
-    
+
     def ingre(self):
         if not self.ingre_selected:
             mat = self.mat_name.text()
@@ -84,7 +85,7 @@ class MainWindow(QtWidgets.QMainWindow, uic.loadUiType("main.ui")[0]):
             self.head.remove_ingredient(self.selected_mat)
             self.renew_table()
             self.renew_json()
-    
+
     def renew_table(self):
         self.ingre_table.clear()
         self.ingre_table.setRowCount(0)
@@ -96,20 +97,20 @@ class MainWindow(QtWidgets.QMainWindow, uic.loadUiType("main.ui")[0]):
             self.ingre_table.setRowCount(row + 1)
             self.ingre_table.setItem(row, 0, QtWidgets.QTableWidgetItem(mat))
             self.ingre_table.setItem(row, 1, QtWidgets.QTableWidgetItem(self.head.ingredients[mat]))
-    
+
     def url(self):
         self.head.from_url(self.line_head_url.text())
         self.line_head_url.setText("")
         self.renew_json()
         self.head_name.setText(self.head.name)
         self.head_string.setText(self.head.b64)
-    
+
     def onchange(self, f):
         if f == "NAME":
             self.head.name = self.head_name.text()
         elif f == "B64":
             self.head.b64 = self.head_string.text()
         self.renew_json()
-    
+
     def renew_json(self):
         self.json_text.setText(self.head.to_json())
