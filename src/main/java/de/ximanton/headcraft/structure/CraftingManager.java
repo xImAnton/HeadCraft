@@ -55,7 +55,7 @@ public class CraftingManager implements Listener {
     @EventHandler
     public void onInventoryClose(InventoryCloseEvent e) {
         if (getByPlayer((Player) e.getPlayer()) != null) {
-            inventorys.remove(e.getPlayer());
+            inventorys.remove((Player) e.getPlayer());
         }
     }
 
@@ -83,14 +83,14 @@ public class CraftingManager implements Listener {
                 if (inv.getPage() >= maxPage) return;
                 inv.setPage(inv.getPage() + 1);
                 inv.reloadPage();
-                player.sendMessage(Main.getPrefix() + "You are now viewing " + ChatColor.YELLOW + "Page " + inv.getPage());
+                player.sendMessage(Main.getPrefix() + Main.getPlugin().getMessages().formatPageChanged(inv.getPage()));
             }
             // left next page item clicked
             else if (slot == 45) {
                 if (inv.getPage() < 2) return;
                 inv.setPage(inv.getPage() - 1);
                 inv.reloadPage();
-                player.sendMessage(Main.getPrefix() + "You are now viewing " + ChatColor.YELLOW + "Page " + inv.getPage());
+                player.sendMessage(Main.getPrefix() + Main.getPlugin().getMessages().formatPageChanged(inv.getPage()));
             }
             // when a craftable head is clicked
             else if (isHeadSlot(slot)) {
@@ -109,10 +109,10 @@ public class CraftingManager implements Listener {
                 // if player has all items, craft it
                 if (hasItems.get()) {
                     removeItems(player, recipe);
-                    player.sendMessage(Main.getPrefix() + "You crafted a " + ChatColor.GREEN + recipe.getName() + ChatColor.GRAY + "!");
+                    player.sendMessage(Main.getPrefix() + Main.getPlugin().getMessages().formatCraftingSuccess(recipe.getName()));
                     player.getInventory().addItem(recipe.toInvItem());
                 } else {
-                    player.sendMessage(Main.getPrefix() + "You don't have enough " + ChatColor.GREEN + "Items" + ChatColor.GRAY + " to craft this " + ChatColor.GREEN + "Head" + ChatColor.GRAY + "!");
+                    player.sendMessage(Main.getPrefix() + Main.getPlugin().getMessages().getNotEnoughItems());
                 }
             }
         }

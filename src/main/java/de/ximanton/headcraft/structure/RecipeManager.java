@@ -17,13 +17,13 @@ import java.util.Map;
  */
 public class RecipeManager {
 
-    private ArrayList<HeadRecipe> recipes = new ArrayList<>();
+    private final ArrayList<HeadRecipe> recipes = new ArrayList<>();
 
     /**
      * reloads the custom added heads from the recipes.json file
      */
     private void reloadCustomHeads() {
-        File recipeFile = new File(Main.getPlugin().getDataFolder().getPath() + "/recipes.json");
+        File recipeFile = new File(Main.getPlugin().getDataFolder(), "recipes.json");
         if (!recipeFile.exists()) {
             try {
                 recipeFile.createNewFile();

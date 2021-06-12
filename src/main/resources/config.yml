@@ -1,0 +1,11 @@
+messages:
+  mustBePlayer: "§cYou have to be a player to use HeadCraft"
+  close: "§cClose"
+  closeTip: "§eClick to close this Window"
+  goRight: "§7Go Right"
+  goRightTip: "§eClick to go right"
+  goLeft: "§7Go Left"
+  goLeftTip: "§eClick to go left"
+  pageChanged: "You are now viewing §ePage %page%"
+  craftingSuccess: "You crafted a §a%head%§7!"
+  notEnoughItems: "You don't have enough items to craft this Head!"

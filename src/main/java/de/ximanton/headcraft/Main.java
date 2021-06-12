@@ -21,9 +21,11 @@ public final class Main extends JavaPlugin {
 
     private RecipeManager recipeManager;
     private CraftingManager craftingManager;
+    private MessageManager messages;
 
     public Main() {
         INSTANCE = this;
+        this.messages = new MessageManager(getConfig().getConfigurationSection("messages"));
         this.recipeManager = new RecipeManager();
         this.craftingManager = new CraftingManager();
     }
@@ -38,9 +40,7 @@ public final class Main extends JavaPlugin {
      */
     @Override
     public void onEnable() {
-        if (!getDataFolder().exists()) {
-            getDataFolder().mkdir();
-        }
+        saveDefaultConfig();
         getRecipeManager().reload();
         Bukkit.getPluginManager().registerEvents(craftingManager, this);
         getCommand("heads").setExecutor(new HeadCommand());
@@ -95,5 +95,9 @@ public final class Main extends JavaPlugin {
             newName.append(Character.toUpperCase(word.charAt(0))).append(word.substring(1)).append(" ");
         }
         return newName.toString();
+    }
+
+    public MessageManager getMessages() {
+        return messages;
     }
 }

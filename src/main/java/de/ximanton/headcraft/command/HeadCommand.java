@@ -13,7 +13,7 @@ public class HeadCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (!(sender instanceof Player)) {
-            sender.sendMessage(Main.getPrefix() + "Du must ein Spieler sein, um diesen Command zu benutzen!");
+            sender.sendMessage(Main.getPrefix() + Main.getPlugin().getMessages().getMustBePlayer());
             return false;
         }
         Main.getPlugin().getCraftingManager().newCraftingInventory((Player) sender);

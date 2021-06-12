@@ -1,5 +1,6 @@
 package de.ximanton.headcraft.enums;
 
+import de.ximanton.headcraft.Main;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
@@ -29,20 +30,20 @@ public enum GUIItemType {
             case CLOSE:
                 item = new ItemStack(Material.BARRIER);
                 meta = item.getItemMeta();
-                meta.setDisplayName(ChatColor.RED + "Schließen");
-                meta.setLore(Arrays.asList(" ", ChatColor.YELLOW + "Klicke, um dieses Fenster zu schließen"));
+                meta.setDisplayName(Main.getPlugin().getMessages().getClose());
+                meta.setLore(Arrays.asList(" ", Main.getPlugin().getMessages().getCloseTip()));
                 break;
             case ARROW_LEFT:
                 item = new ItemStack(Material.ARROW);
                 meta = item.getItemMeta();
-                meta.setDisplayName(ChatColor.GRAY + "Nach links");
-                meta.setLore(Arrays.asList(" ", ChatColor.YELLOW + "Klicke, um weiter nach links zu gehen"));
+                meta.setDisplayName(Main.getPlugin().getMessages().getGoLeft());
+                meta.setLore(Arrays.asList(" ", Main.getPlugin().getMessages().getGoLeftTip()));
                 break;
             case ARROW_RIGHT:
                 item = new ItemStack(Material.ARROW);
                 meta = item.getItemMeta();
-                meta.setDisplayName(ChatColor.GRAY + "Nach rechts");
-                meta.setLore(Arrays.asList(" ", ChatColor.YELLOW + "Klicke, um weiter nach rechts zu gehen"));
+                meta.setDisplayName(Main.getPlugin().getMessages().getGoRight());
+                meta.setLore(Arrays.asList(" ", Main.getPlugin().getMessages().getGoRightTip()));
                 break;
         }
         if (meta != null) item.setItemMeta(meta);
