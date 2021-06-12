@@ -61,8 +61,12 @@ public class PlayerCraftingInterface {
                 continue;
             }
             HeadRecipe recipe = Main.getPlugin().getRecipeManager().getRecipes().get((recipeIndex));
-            inv.setItem(slot, recipe.toGUIItem());
-            recipeSlots.put(slot, recipe);
+            try {
+                inv.setItem(slot, recipe.toGUIItem());
+                recipeSlots.put(slot, recipe);
+            } catch (StringIndexOutOfBoundsException e) {
+                System.out.println("Error while creating head " + recipe.getName());
+            }
             i++;
         }
     }

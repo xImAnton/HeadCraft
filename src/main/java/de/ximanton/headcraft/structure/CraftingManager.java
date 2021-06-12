@@ -110,7 +110,11 @@ public class CraftingManager implements Listener {
                 if (hasItems.get()) {
                     removeItems(player, recipe);
                     player.sendMessage(Main.getPrefix() + Main.getPlugin().getMessages().formatCraftingSuccess(recipe.getName()));
-                    player.getInventory().addItem(recipe.toInvItem());
+                    try {
+                        player.getInventory().addItem(recipe.toInvItem());
+                    } catch (StringIndexOutOfBoundsException t) {
+                        player.sendMessage(ChatColor.RED + "Error while creating this Head!");
+                    }
                 } else {
                     player.sendMessage(Main.getPrefix() + Main.getPlugin().getMessages().getNotEnoughItems());
                 }

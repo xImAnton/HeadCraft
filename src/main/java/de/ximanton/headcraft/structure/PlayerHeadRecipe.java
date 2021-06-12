@@ -24,7 +24,7 @@ public class PlayerHeadRecipe extends HeadRecipe {
     }
 
     @Override
-    public ItemStack toGUIItem() {
+    public ItemStack toGUIItem() throws StringIndexOutOfBoundsException {
         ItemStack item = SkullCreator.itemFromUuid(player.getUniqueId());
         ItemMeta meta = item.getItemMeta();
         meta.setDisplayName(ChatColor.GREEN + getName() + "'s Head");
@@ -37,7 +37,7 @@ public class PlayerHeadRecipe extends HeadRecipe {
     }
 
     @Override
-    public ItemStack toInvItem() {
+    public ItemStack toInvItem() throws StringIndexOutOfBoundsException {
         ItemStack item = SkullCreator.itemFromUuid(player.getUniqueId());
         ItemMeta meta = item.getItemMeta();
         meta.setDisplayName(ChatColor.WHITE + getName() + "'s Head");
