@@ -19,9 +19,9 @@ public class HeadRecipe {
     /**
      * hash 64 string, the result
      */
-    private String result;
+    private final String result;
     private HashMap<Material, Integer> ingredients;
-    private String name;
+    private final String name;
 
     public HeadRecipe(String result, String name) {
         this.result = result;
@@ -72,5 +72,9 @@ public class HeadRecipe {
 
     public HashMap<Material, Integer> getIngredients() {
         return ingredients;
+    }
+
+    public void setIngredients(HashMap<Material, Integer> ingredients) {
+        this.ingredients = ingredients;
     }
 }
